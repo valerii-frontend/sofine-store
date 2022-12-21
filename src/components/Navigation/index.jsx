@@ -22,6 +22,19 @@ export default function Navigation() {
           <span>
             <img src={arrow} alt='dropdown icon' />
           </span>
+          {drop && (
+            <ol className={styles.submenu}>
+              <li>
+                <Link>Obuwie</Link>
+              </li>
+              <li>
+                <Link>Odzież</Link>
+              </li>
+              <li>
+                <Link>Akcesoria</Link>
+              </li>
+            </ol>
+          )}
         </li>
         <li>
           <Link>Trendy</Link>
