@@ -1,0 +1,49 @@
+.nav {
+  flex: 1 1 auto;
+}
+.nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 90px;
+}
+.nav a {
+  color: white;
+  text-decoration: none;
+  letter-spacing: 1px;
+  position: relative;
+}
+.nav a::before {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  width: 0;
+  height: 1px;
+  background-color: #fff;
+  transition: 0.3s;
+}
+.nav a::after {
+  transition: 0.3s;
+}
+.nav a:hover::before {
+  left: 0;
+  width: 100%;
+}
+.drop {
+  position: relative;
+}
+.drop a::before {
+  display: none;
+}
+.drop span {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: 0.3s;
+}
+.active span {
+  transform: translateX(-50%) translateY(10px);
+  opacity: 0;
+}
