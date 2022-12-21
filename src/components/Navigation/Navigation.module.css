@@ -1,20 +1,20 @@
 .nav {
   flex: 1 1 auto;
+  margin: 0 30px;
 }
-.nav > ul {
+.menu {
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 90px;
+  justify-content: space-evenly;
 }
 /* main navigation */
-.nav a {
+.menu a {
   color: white;
   text-decoration: none;
   letter-spacing: 1px;
   position: relative;
 }
-.nav a::before {
+.menu a::before {
   content: "";
   position: absolute;
   bottom: -5px;
@@ -24,7 +24,7 @@
   background-color: #fff;
   transition: 0.3s;
 }
-.nav a::after {
+.menu a::after {
   transition: 0.3s;
 }
 .nav a:hover::before {
@@ -38,6 +38,7 @@
 .drop > a::before {
   display: none;
 }
+/* dropdown arrow */
 .drop span {
   position: absolute;
   top: 100%;
@@ -61,13 +62,112 @@
   transform: translateX(-50%) translateY(10px);
   opacity: 0;
 }
+/* burger */
+.burger {
+  display: block;
+  position: relative;
+  max-width: 50px;
+  height: 50px;
+  flex: 0 0 50px;
+  cursor: pointer;
+  z-index: 3;
+  order: 1;
+}
+.burger::before,
+.burger::after {
+  content: "";
+  position: absolute;
+  width: 80%;
+  height: 4px;
+  left: 5px;
+  background-color: #fff;
+  transition: 0.3s;
+}
+.burger::after {
+  top: 15px;
+}
+.burger::before {
+  bottom: 15px;
+}
+.burger.show::after {
+  top: 25px;
+  transform: rotate(45deg);
+}
+.burger.show::before {
+  top: 25px;
+  transform: rotate(-45deg);
+}
 
 @keyframes show {
   from {
     opacity: 0;
   }
+  50% {
+    transform: translateY(15px);
+  }
   to {
     opacity: 1;
     transform: translateY(10px);
+  }
+}
+@keyframes showMobile {
+  from {
+    transform: rotate(-90deg) translateY(0);
+  }
+  50% {
+    transform: rotate(-90deg) translateY(10px);
+  }
+  to {
+    transform: rotate(-90deg) translateY(5px);
+  }
+}
+.mobileMenu.show {
+  transform: translateX(0);
+}
+@media (max-width: 992px) {
+  .nav {
+    margin: 0;
+    flex: 0 0 50px;
+  }
+  .mobileMenu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+    padding: 100px 50px 50px 50px;
+    background-color: black;
+    z-index: 2;
+    transform: translateX(-100%);
+    transition: 0.5s;
+  }
+  .mobileMenu li {
+    margin-bottom: 20px;
+  }
+  .submenu {
+    top: 5px;
+    left: 110%;
+  }
+  .drop {
+    display: flex;
+    align-items: center;
+  }
+  .drop span {
+    position: static;
+    margin-left: 5px;
+    transform: rotate(-90deg) translateX(0);
+  }
+  .active span {
+    animation: showMobile 500ms 1 both;
+    opacity: 1;
+  }
+}
+@media (max-width: 576px) {
+  .mobileMenu {
+    width: 100%;
   }
 }
