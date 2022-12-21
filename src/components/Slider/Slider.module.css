@@ -1,0 +1,11 @@
+.home {
+  min-height: 100vh;
+  position: relative;
+}
+.slide img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 15%;
+}

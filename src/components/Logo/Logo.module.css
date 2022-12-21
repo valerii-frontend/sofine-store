@@ -3,9 +3,13 @@
   min-width: 150px;
   position: relative;
   z-index: 3;
+  transition: 0.3s;
 }
 .logo img {
   max-width: 100%;
+}
+.logo:hover {
+  transform: scale(1.05);
 }
 @media screen and (max-width: 992px) {
   .logo {
