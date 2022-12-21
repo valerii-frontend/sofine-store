@@ -1,0 +1,47 @@
+.icons {
+  position: relative;
+  flex: 0 0 50px;
+  max-width: 50px;
+  width: 100%;
+  height: 50px;
+}
+.icons a {
+  width: 16px;
+  height: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+  opacity: 0.5;
+}
+.icons a img {
+  max-width: 16px;
+  max-height: 16px;
+}
+.icons a[href*="face"] {
+  position: absolute;
+  top: 0;
+  left: calc(50% - 8px);
+}
+.icons a[href*="twit"] {
+  position: absolute;
+  top: calc(50% - 8px);
+  left: 0;
+}
+.icons a[href*="inst"] {
+  position: absolute;
+  bottom: 0;
+  left: calc(50% - 8px);
+}
+.icons a[href*="youtube"] {
+  position: absolute;
+  top: calc(50% - 8px);
+  right: 0;
+}
+
+/* hover */
+
+.icons a:hover {
+  transform: scale(1.75);
+  opacity: 1;
+}
