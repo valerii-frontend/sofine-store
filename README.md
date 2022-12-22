@@ -4,6 +4,7 @@
 2. CSS (grid, flexbox, transform)
 3. Swiper slider
 4. RWD
+- Built with vite
 
 ## Live preview
 
