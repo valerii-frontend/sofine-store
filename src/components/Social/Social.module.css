@@ -16,7 +16,7 @@
   transition: 0.3s;
   opacity: 0.5;
 }
-.icons a img {
+.icons a svg {
   max-width: 16px;
   max-height: 16px;
 }

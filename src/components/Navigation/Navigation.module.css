@@ -9,7 +9,7 @@
 }
 /* main navigation */
 .menu a {
-  color: white;
+  color: var(--color);
   text-decoration: none;
   letter-spacing: 1px;
   position: relative;
@@ -21,7 +21,7 @@
   left: 50%;
   width: 0;
   height: 1px;
-  background-color: #fff;
+  background-color: var(--color);
   transition: 0.3s;
 }
 .menu a::after {
@@ -49,6 +49,7 @@
 .submenu {
   position: absolute;
   top: 150%;
+  padding: 10px;
 }
 .submenu li {
   margin-bottom: 15px;
@@ -80,7 +81,7 @@
   width: 80%;
   height: 4px;
   left: 5px;
-  background-color: #fff;
+  background-color: var(--color);
   transition: 0.3s;
 }
 .burger::after {
@@ -140,7 +141,7 @@
     justify-content: start;
     align-items: flex-start;
     padding: 100px 50px 50px 50px;
-    background-color: black;
+    background-color: var(--menu);
     z-index: 2;
     transform: translateX(-100%);
     transition: 0.5s;

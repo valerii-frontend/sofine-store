@@ -3,8 +3,9 @@ import { Link } from "react-router-dom";
 
 import styles from "./Navigation.module.css";
 import arrow from "../../assets/icons/chevron-down.svg";
+import arrowWhite from "../../assets/icons/chevron-down_WHITE.svg";
 
-export default function Navigation() {
+export default function Navigation({ isLight, setIsLight }) {
   const [drop, setDrop] = useState(false);
   const [menu, setMenu] = useState(false);
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -39,7 +40,7 @@ export default function Navigation() {
         <li className={`${styles.drop} ${drop ? styles.active : ""}`} onClick={dropDownClick}>
           <Link>Produkty</Link>
           <span>
-            <img src={arrow} alt='dropdown icon' />
+            <img src={isLight ? arrow : arrowWhite} alt='dropdown icon' />
           </span>
           {drop && (
             <ol className={styles.submenu}>

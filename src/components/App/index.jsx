@@ -1,4 +1,4 @@
-import ReactDOM from "react-dom/client";
+import { useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Home from "../pages/Home";
@@ -6,16 +6,15 @@ import Error404 from "../pages/Error404";
 
 import Header from "../Header";
 
-import styles from "./App.module.css";
-
 function App() {
+  const [isLight, setIsLight] = useState(false);
   return (
     <BrowserRouter>
-      <div className={styles.app}>
-        <Header />
+      <div className={`app ${isLight ? "light" : ""}`}>
+        <Header isLight={isLight} setIsLight={setIsLight} />
 
         <Routes>
-          <Route path='/' element={<Home />}></Route>
+          <Route path='/' element={<Home setIsLight={setIsLight} isLight={isLight} />}></Route>
           <Route path='*' element={<Error404 />}></Route>
         </Routes>
       </div>

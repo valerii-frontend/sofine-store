@@ -1,7 +1,14 @@
 body {
-  color: white;
-  background-color: #333;
   font-family: Roboto;
+}
+.app {
+  --color: white;
+  --menu: black;
+  color: var(--color);
+}
+.app.light {
+  --color: black;
+  --menu: white;
 }
 .swiper-wrapper {
   min-height: 100vh;

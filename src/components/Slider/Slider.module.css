@@ -14,14 +14,14 @@
   height: var(--size);
   margin-bottom: 0.75em;
 }
-.title:before {
-  content: "";
+.title .cross {
   position: absolute;
   width: 120%;
   height: 120%;
   top: -10%;
   left: -10%;
-  background: url("../../assets/icons/line.svg") center/contain no-repeat;
+  object-fit: contain;
+  object-position: center;
   z-index: 3;
 }
 
@@ -61,17 +61,27 @@
 }
 /* circle */
 .content a span {
+  position: relative;
   flex: 0 0 76px;
   height: 76px;
   border-radius: 50%;
-  border: 1px solid white;
-  background: url("../../assets/icons/chevron-right.svg") center/16px no-repeat;
+  border: 1px solid var(--color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.content a span img {
+  display: block;
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+  object-position: center;
 }
 /* line */
 .content a b {
   flex: 1 1 auto;
   height: 1px;
-  background-color: #fff;
+  background-color: var(--color);
 }
 @media (max-width: 992px) {
   .title {
