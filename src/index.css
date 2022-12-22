@@ -35,8 +35,8 @@ footer {
   position: relative;
   text-align: center;
   padding: 20px;
-  background-color: #000;
-  color: white;
+  background-color: white;
+  color: black;
 }
 footer:before {
   content: "";
@@ -45,16 +45,16 @@ footer:before {
   height: 1px;
   top: 10px;
   left: 5%;
-  background-color: #fff;
+  background-color: black;
 }
 footer span {
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(0, 0, 0, 0.5);
 }
 footer a {
-  color: rgba(255, 255, 255, 0.75);
+  color: rgba(0, 0, 0, 0.75);
   transition: 0.3s;
 }
 footer a:hover {
-  color: rgba(255, 255, 255, 1);
+  color: rgba(0, 0, 0, 1);
   text-decoration: none;
 }
