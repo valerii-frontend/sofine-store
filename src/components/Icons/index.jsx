@@ -4,18 +4,16 @@ export function InstagramIcon({ color }) {
       version='1.1'
       id='insta'
       xmlns='http://www.w3.org/2000/svg'
-      xmlns:xlink='http://www.w3.org/1999/xlink'
+      xmlnsXlink='http://www.w3.org/1999/xlink'
       x='0px'
       y='0px'
       width='43.507px'
       height='43.506px'
       viewBox='0 0 43.507 43.506'
-      enable-background='new 0 0 43.507 43.506'
-      xml:space='preserve'>
+      enableBackground='new 0 0 43.507 43.506'
+      xmlSpace='preserve'>
       <path
         fill={color}
-        fill-rule='evenodd'
-        clip-rule='evenodd'
         d='M32.839,0H10.667C4.769,0,0,4.769,0,10.667v22.173    c0,5.897,4.769,10.667,10.667,10.667h22.172c5.898,0,10.667-4.769,10.667-10.667V10.667C43.507,4.769,38.737,0,32.839,0z     M22.139,32.259c-5.994,0-10.859-4.866-10.859-10.861c0-6.025,4.865-10.893,10.859-10.893c6.027,0,10.894,4.868,10.894,10.893    C33.033,27.393,28.166,32.259,22.139,32.259z M35.136,12.979c-1.78,0-3.223-1.443-3.223-3.223c0-1.779,1.443-3.222,3.223-3.222    c1.779,0,3.222,1.443,3.222,3.222C38.358,11.536,36.915,12.979,35.136,12.979z'
       />
     </svg>
@@ -27,14 +25,14 @@ export function TwitterIcon({ color }) {
       version='1.1'
       id='twitter'
       xmlns='http://www.w3.org/2000/svg'
-      xmlns:xlink='http://www.w3.org/1999/xlink'
+      xmlnsXlink='http://www.w3.org/1999/xlink'
       x='0px'
       y='0px'
       width='55.335px'
       height='45.142px'
       viewBox='0 0 55.335 45.142'
-      enable-background='new 0 0 55.335 45.142'
-      xml:space='preserve'>
+      enableBackground='new 0 0 55.335 45.142'
+      xmlSpace='preserve'>
       <g>
         <path
           fill={color}
@@ -50,14 +48,14 @@ export function FaceBookIcon({ color }) {
       version='1.1'
       id='fb'
       xmlns='http://www.w3.org/2000/svg'
-      xmlns:xlink='http://www.w3.org/1999/xlink'
+      xmlnsXlink='http://www.w3.org/1999/xlink'
       x='0px'
       y='0px'
       width='20.916px'
       height='45.118px'
       viewBox='0 0 20.916 45.118'
-      enable-background='new 0 0 20.916 45.118'
-      xml:space='preserve'>
+      enableBackground='new 0 0 20.916 45.118'
+      xmlSpace='preserve'>
       <path
         fill={color}
         d='M0,14.502h2.578c1.902,0,1.675,0.29,1.708-1.643c0.032-1.58,0.032-3.191,0.13-4.771c0.16-4.189,3.447-7.605,7.669-7.895  C14.727,0,17.402,0.064,20.078,0c0.547,0,0.677,0.257,0.677,0.774c0,2.19-0.032,4.349,0,6.508c0.033,0.646-0.258,0.806-0.837,0.806  c-1.354-0.032-2.74-0.032-4.126-0.032c-0.87-0.128-1.676,0.483-1.836,1.354c0,0.162,0,0.322,0,0.483c0,1.29,0.031,2.546,0,3.803  c0,0.645,0.193,0.87,0.87,0.87c1.676-0.033,3.416-0.033,5.123-0.033h0.904c0.064,0.194,0.064,0.387,0.064,0.582  c-0.193,2.32-0.419,4.64-0.613,6.961c-0.063,0.515-0.29,0.548-0.708,0.548c-1.546,0-3.126,0.064-4.705,0  c-0.741-0.033-0.934,0.225-0.903,0.934c0,6.735,0,13.503,0,20.239c0,1.29,0,1.29-1.255,1.29c-2.45,0-4.898-0.033-7.349,0.032  c-0.837,0-1.096-0.258-1.096-1.096c0.032-6.736,0.032-13.471,0.032-20.239c0-1.16,0-1.16-1.191-1.16H0V14.502z'
@@ -71,14 +69,14 @@ export function YoutubeIcon({ color }) {
       version='1.1'
       id='yt'
       xmlns='http://www.w3.org/2000/svg'
-      xmlns:xlink='http://www.w3.org/1999/xlink'
+      xmlnsXlink='http://www.w3.org/1999/xlink'
       x='0px'
       y='0px'
       width='51.984px'
       height='39px'
       viewBox='0 0 51.984 39'
-      enable-background='new 0 0 51.984 39'
-      xml:space='preserve'>
+      enableBackground='new 0 0 51.984 39'
+      xmlSpace='preserve'>
       <g>
         <path
           fill={color}
