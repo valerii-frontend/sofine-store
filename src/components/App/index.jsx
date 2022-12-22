@@ -11,6 +11,15 @@ function App() {
       <Header isLight={isLight} setIsLight={setIsLight} />
       <Slider setIsLight={setIsLight} isLight={isLight} />
       <Gallery />
+      <footer>
+        <span>
+          developed by{" "}
+          <a href='https://www.linkedin.com/in/valerii-lozghachov/' target='_blank'>
+            v.lozghachov
+          </a>{" "}
+          | 2022
+        </span>
+      </footer>
     </div>
   );
 }

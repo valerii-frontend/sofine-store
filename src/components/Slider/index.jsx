@@ -38,12 +38,12 @@ export default function Slider({ setIsLight, isLight }) {
           <h3>
             keune <span>design</span>
           </h3>
-          <span>
+          <a href='#'>
             <b></b>
             <span>
               <img src={isLight ? arrow : arrowWhite} />
             </span>
-          </span>
+          </a>
         </div>
       </SwiperSlide>
       <SwiperSlide className='light'>
@@ -57,12 +57,12 @@ export default function Slider({ setIsLight, isLight }) {
           <h3>
             keune <span>design</span>
           </h3>
-          <span>
+          <a href='#'>
             <b></b>
             <span>
               <img src={isLight ? arrow : arrowWhite} />
             </span>
-          </span>
+          </a>
         </div>
       </SwiperSlide>
       <SwiperSlide>
@@ -76,12 +76,12 @@ export default function Slider({ setIsLight, isLight }) {
           <h3>
             keune <span>design</span>
           </h3>
-          <span>
+          <a href='#'>
             <b></b>
             <span>
               <img src={isLight ? arrow : arrowWhite} />
             </span>
-          </span>
+          </a>
         </div>
       </SwiperSlide>
     </Swiper>
