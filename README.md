@@ -8,3 +8,5 @@
 ## Live preview
 
 ![image](../../assets/images/slide1-big.jpg)
+
+[GitHub pages](https://valerii-frontend.github.io/sofine-store/)
