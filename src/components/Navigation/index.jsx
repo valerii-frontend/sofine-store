@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
 
 import styles from "./Navigation.module.css";
 import arrow from "../../assets/icons/chevron-down.svg";
@@ -35,41 +34,41 @@ export default function Navigation({ isLight, setIsLight }) {
       )}
       <ul className={`${windowWidth <= 992 ? styles.mobileMenu : ""} ${styles.menu} ${menu ? styles.show : ""}`}>
         <li>
-          <Link>Nowosci</Link>
+          <a href='#'>Nowosci</a>
         </li>
         <li className={`${styles.drop} ${drop ? styles.active : ""}`} onClick={dropDownClick}>
-          <Link>Produkty</Link>
+          <a href='#'>Produkty</a>
           <span>
             <img src={isLight ? arrow : arrowWhite} alt='dropdown icon' />
           </span>
           {drop && (
             <ol className={styles.submenu}>
               <li>
-                <Link>Obuwie</Link>
+                <a href='#'>Obuwie</a>
               </li>
               <li>
-                <Link>Odzież</Link>
+                <a href='#'>Odzież</a>
               </li>
               <li>
-                <Link>Akcesoria</Link>
+                <a href='#'>Akcesoria</a>
               </li>
             </ol>
           )}
         </li>
         <li>
-          <Link>Trendy</Link>
+          <a href='#'>Trendy</a>
         </li>
         <li>
-          <Link>O firmie</Link>
+          <a href='#'>O firmie</a>
         </li>
         <li>
-          <Link>Salony</Link>
+          <a href='#'>Salony</a>
         </li>
         <li>
-          <Link>Dystrybutorzy</Link>
+          <a href='#'>Dystrybutorzy</a>
         </li>
         <li>
-          <Link>Kontakt</Link>
+          <a href='#'>Kontakt</a>
         </li>
       </ul>
     </nav>

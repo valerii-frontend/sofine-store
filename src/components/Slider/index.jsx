@@ -1,5 +1,3 @@
-import { Link } from "react-router-dom";
-
 import { Pagination, Navigation, Autoplay } from "swiper";
 import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
 
@@ -40,12 +38,12 @@ export default function Slider({ setIsLight, isLight }) {
           <h3>
             keune <span>design</span>
           </h3>
-          <Link>
+          <span>
             <b></b>
             <span>
               <img src={isLight ? arrow : arrowWhite} />
             </span>
-          </Link>
+          </span>
         </div>
       </SwiperSlide>
       <SwiperSlide className='light'>
@@ -59,12 +57,12 @@ export default function Slider({ setIsLight, isLight }) {
           <h3>
             keune <span>design</span>
           </h3>
-          <Link>
+          <span>
             <b></b>
             <span>
               <img src={isLight ? arrow : arrowWhite} />
             </span>
-          </Link>
+          </span>
         </div>
       </SwiperSlide>
       <SwiperSlide>
@@ -78,12 +76,12 @@ export default function Slider({ setIsLight, isLight }) {
           <h3>
             keune <span>design</span>
           </h3>
-          <Link>
+          <span>
             <b></b>
             <span>
               <img src={isLight ? arrow : arrowWhite} />
             </span>
-          </Link>
+          </span>
         </div>
       </SwiperSlide>
     </Swiper>

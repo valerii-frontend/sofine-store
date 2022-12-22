@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import cards from "./cards";
 
 import arrow from "../../assets/icons/chevron-right_WHITE.svg";
@@ -38,9 +37,9 @@ export default function Gallery() {
             <img src={card.img} alt={card.text + " " + card.text2 + " preview example"} />
             <div className='text'>
               {title}
-              <Link>
+              <a href='#'>
                 <b></b> <span>odkryj serie</span> <img src={arrow} alt='arrow right' />
-              </Link>
+              </a>
             </div>
           </div>
         );
