@@ -10,3 +10,7 @@
 ![image](./screenshot.jpg)
 
 [GitHub pages](https://valerii-frontend.github.io/sofine-store/)
+
+## Dev
+
+[LinkedIn](https://www.linkedin.com/in/valerii-lozghachov/)
