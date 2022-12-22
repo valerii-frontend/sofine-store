@@ -7,6 +7,6 @@
 
 ## Live preview
 
-![image](./src/assets/images/slide1-big.jpg)
+![image](./screenshot.jpg)
 
 [GitHub pages](https://valerii-frontend.github.io/sofine-store/)
