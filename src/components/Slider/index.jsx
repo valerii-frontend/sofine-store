@@ -32,8 +32,8 @@ export default function Slider({ setIsLight, isLight }) {
       <SwiperSlide>
         <img src={slide01} alt='woman with light hair' />
         <div className={styles.content}>
-          <div className={styles.title}>
-            o1. <img className={styles.cross} src={isLight ? line : lineWhite} />
+          <div className={`${styles.title} title`}>
+            o1. <img className='cross' src={isLight ? line : lineWhite} />
           </div>
           <h2>Bez kompromisu.</h2>
           <h2>Idealnie takie jak lubisz.</h2>
@@ -51,8 +51,8 @@ export default function Slider({ setIsLight, isLight }) {
       <SwiperSlide className='light'>
         <img src={slide02} alt='man in white shirt' />
         <div className={styles.content}>
-          <div className={styles.title}>
-            o1. <img className={styles.cross} src={isLight ? line : lineWhite} />
+          <div className={`${styles.title} title`}>
+            o1. <img className='cross' src={isLight ? line : lineWhite} />
           </div>
           <h2>Bez kompromisu.</h2>
           <h2>Idealnie takie jak lubisz.</h2>
@@ -70,8 +70,8 @@ export default function Slider({ setIsLight, isLight }) {
       <SwiperSlide>
         <img src={slide03} alt='woman with the red hair in the garden' />
         <div className={styles.content}>
-          <div className={styles.title}>
-            o1. <img className={styles.cross} src={isLight ? line : lineWhite} />
+          <div className={`${styles.title} title`}>
+            o1. <img className='cross' src={isLight ? line : lineWhite} />
           </div>
           <h2>Bez kompromisu.</h2>
           <h2>Idealnie takie jak lubisz.</h2>

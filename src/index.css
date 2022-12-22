@@ -13,3 +13,21 @@ body {
 .swiper-wrapper {
   min-height: 100vh;
 }
+.title {
+  --size: 100px;
+  position: relative;
+  display: inline-block;
+  font-size: var(--size);
+  width: var(--size);
+  height: var(--size);
+}
+.title .cross {
+  position: absolute;
+  width: 120%;
+  height: 120%;
+  top: -10%;
+  left: -10%;
+  object-fit: contain;
+  object-position: center;
+  z-index: 3;
+}

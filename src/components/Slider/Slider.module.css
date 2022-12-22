@@ -6,23 +6,7 @@
   text-align: left;
 }
 .title {
-  --size: 100px;
-  position: relative;
-  display: inline-block;
-  font-size: var(--size);
-  width: var(--size);
-  height: var(--size);
   margin-bottom: 0.75em;
-}
-.title .cross {
-  position: absolute;
-  width: 120%;
-  height: 120%;
-  top: -10%;
-  left: -10%;
-  object-fit: contain;
-  object-position: center;
-  z-index: 3;
 }
 
 .content h2 {
